@@ -61,7 +61,7 @@ const ItemDetail = () => {
 
     return (
         <AnimatePresence exitBeforeEnter>
-            <motion.div variants={ animation.pageAnimation1 } initial='hidden' animate='visible' exit='exit'>
+            <motion.div variants={ animation.pageAnimation } initial='hidden' animate='visible' exit='exit'>
                 <Container>
                     <Typography variant='h4' sx={ styles.headerRow }>
                         { todo ? 'Add New' : 'Edit' } Item

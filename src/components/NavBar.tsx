@@ -62,9 +62,11 @@ const NavBar = () => {
                 {
                     auth.isLoggedIn &&
                     <>
-                        <Avatar src={ auth.profileImg } sx={ styles.profile } onClick={ openProfileOptions }>
-                            {auth.displayName[0]}
-                        </Avatar>
+                        <motion.div whileTap={{ scale: 1.2 }}>
+                            <Avatar src={ auth.profileImg } sx={ styles.profile } onClick={ openProfileOptions }>
+                                {auth.displayName[0]}
+                            </Avatar>
+                        </motion.div>
                         <Popover id={ id } open={ open } anchorEl={ popElement } onClose={ closeProfileOptions }
                             anchorOrigin={{ vertical: 'bottom', horizontal: 'right' }}
                             transformOrigin={{ vertical: 'top', horizontal: 'left' }}>

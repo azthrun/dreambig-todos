@@ -42,7 +42,7 @@ const FirebaseSignin = () => {
 
     return (
         <AnimatePresence exitBeforeEnter>
-            <motion.div variants={ animation.pageAnimation2 } initial='hidden' animate='visible' exit='exit'>
+            <motion.div variants={ animation.pageAnimation } initial='hidden' animate='visible' exit='exit'>
                 <Container sx={ styles.container }>
                     <Card>
                         <CardActionArea>

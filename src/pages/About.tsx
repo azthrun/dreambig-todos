@@ -14,7 +14,7 @@ const About = () => {
 
     return (
         <AnimatePresence exitBeforeEnter>
-            <motion.div variants={ animation.pageAnimation1 } initial='hidden' animate='visible' exit='exit'>
+            <motion.div variants={ animation.pageAnimation } initial='hidden' animate='visible' exit='exit'>
                 <Container>
                     <Card sx={ styles.card }>
                         <CardHeader 

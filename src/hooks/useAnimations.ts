@@ -1,34 +1,21 @@
 const useAnimations = () => {
     const getAnimations = () => ({
-        pageAnimation1: {
-            hidden: {
-                x: '100vw',
-            },
-            visible: {
-                x: 0,
-                transition: { ease: 'easeInOut', duration: 0.5, },
-            },
-            exit: {
-                x: '-100vw',
-                transition: { ease: 'easeInOut', duration: 0.5, },
-            },
-        },
-        pageAnimation2: {
+        pageAnimation: {
             hidden: {
                 opacity: 0,
             },
             visible: {
                 opacity: 1,
-                 transition: { ease: 'easeInOut', },
+                 transition: { ease: 'easeInOut', duration: 0.5, },
             },
             exit: {
                 opacity: 0,
-                transition: { ease: 'easeInOut', },
+                transition: { ease: 'easeInOut', duration: 0.5, },
             },
         },
         navbarTitleAnimation: {
             hidden: {
-                y: -100,
+                y: -80,
             },
             visible: {
                 y: 0,
@@ -44,7 +31,7 @@ const useAnimations = () => {
         },
         navbarButtonAnimation: {
             hidden: {
-                x: 100,
+                x: 80,
             },
             visible: {
                 x: 0,
