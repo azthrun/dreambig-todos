@@ -1,25 +1,45 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import { Box, ThemeProvider } from "@mui/material";
+import { Routes, Route } from "react-router-dom";
+
+import FirebaseSignin from "./pages/FirebaseSignin";
+import useStyles from "./hooks/useStyles";
+import Home from "./pages/Home";
+import About from "./pages/About";
+import NavBar from "./components/NavBar";
+import ItemDetail from "./pages/ItemDetail";
+import RequireAuth from "./components/RequireAuth";
+import AuthProvider from "./contexts/AuthProvider";
 
 function App() {
+  const { theme, getAppBasicStyles } = useStyles();
+  const styles = getAppBasicStyles();
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <ThemeProvider theme={ theme }>
+      <Box sx={ styles.mainContent }>
+        <AuthProvider>
+          <NavBar />
+          <Routes>
+            <Route>
+              <Route path="/" element={
+                <RequireAuth>
+                    <Home />
+                </RequireAuth>
+                } 
+                />
+              <Route path="/login" element={ <FirebaseSignin /> } />
+              <Route path="/details" element={                  
+                <RequireAuth>                    
+                    <ItemDetail />
+                </RequireAuth> 
+                } 
+                />
+              <Route path="/about" element={ <About /> } />
+            </Route>
+          </Routes>
+        </AuthProvider>
+      </Box>
+    </ThemeProvider>
   );
 }
 
