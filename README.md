@@ -2,6 +2,8 @@
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
+This project has firestore rules that block accesses if the sign-in account is not in white-list.
+
 ## Available Scripts
 
 In the project directory, you can run:
