@@ -36,7 +36,7 @@ const FirebaseSignin = () => {
         } catch {
             setIsLoading(false);
             setIsLoginFailed(true);
-            setFailureMessage('Login sequence interrupted. Please try again.');
+            setFailureMessage('Login failed or not allowed on this app. Please try again.');
         }
     }
 
