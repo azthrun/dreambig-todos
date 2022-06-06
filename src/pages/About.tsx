@@ -28,7 +28,7 @@ const About = () => {
                             />
                         <CardContent>
                             <Typography>
-                                DreamBig is a future company that helps its clients building various kinds of applications. From React, Flutter, to .NET MAUI, from Android, macOS, iOS, to Windows Desktop, from frontend UI/UX to backend data services (APIs), from Web 2.0 to Web 3.0 (Yes! DreamBig does blockchain Web3 developments on Ethereum!), DreamBig can provide excellent solutions that meets different kinds of needs.
+                                DreamBig is a future brand that builds various kinds of applications. From React, Flutter, to .NET MAUI, from Android, macOS, iOS, to Windows Desktop, from frontend UI/UX to backend data services (APIs), from Web 2.0 to Web 3.0 (with Ehtereum blockchain), DreamBig can provide excellent solutions that meets different kinds of needs.
                             </Typography>
                         </CardContent>
                     </Card>
@@ -44,7 +44,7 @@ const About = () => {
                             />
                         <CardContent>
                             <Typography>
-                                Terry has 10+ years of experiences designing and developing mobile, web, and desktop applications on mordern operating systems/platforms. React and .NET MAUI are the two major technologies Terry uses. But he is not limited to the two, but also having experiences in Vue, Angular, Xamarin, and Flutter frameworks/libraries.
+                                Terry has 10+ years of experiences designing and developing mobile, web, and desktop applications on mordern operating systems/platforms. React and .NET MAUI are the two major technologies Terry uses. Other than those, Terry also has experiences in Vue, Angular, Xamarin, and Flutter frameworks/libraries.
                             </Typography>
                             <Typography>
                                 <a href='https://github.com/azthrun' target='_blank' rel='noreferrer' style={ styles.cardContentLink }>
